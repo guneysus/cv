@@ -9,7 +9,7 @@ before_install:
   dvipng 
   texlive-latex-recommended 
   texlive-xetex 
-  # texlive-full
+  texlive-full
 script:
 - make build
 
