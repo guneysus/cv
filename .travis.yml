@@ -10,7 +10,6 @@ script:
 addons:
   artifacts:
     bucket: "guneysu"
-    s3_region: "us-east-2"
     working_dir: _build
     paths:
       - 'resume.pdf'
