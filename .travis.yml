@@ -7,7 +7,7 @@ before_install:
   texlive-latex-extra 
   texlive-fonts-extra 
   dvipng 
-  # texlive-latex-recommended 
+  texlive-latex-recommended 
   texlive-xetex 
   # texlive-full
 script:
