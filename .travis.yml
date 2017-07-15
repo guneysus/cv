@@ -14,5 +14,6 @@ deploy:
   file:
   - _build/resume.pdf
   skip_cleanup: true
+  overwrite: true
   on:
     tags: true
