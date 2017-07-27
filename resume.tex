@@ -35,7 +35,8 @@
 %\definecolor{awesome}{HTML}{CA63A8}
 
 \definecolor{awesome}{HTML}{414141}
-% \colorlet{awesome}{awesome-concrete}
+
+\setbool{acvSectionColorHighlight}{true}
 
 %% Colors for text
 %\definecolor{darktext}{HTML}{414141}
@@ -58,18 +59,22 @@
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
-\name{GÜNEYSU}{ Ahmed Şeref}
+\name{}{Ahmed Şeref GÜNEYSU}
 \address{Zeytinburnu/İSTANBUL}
-\mobile{+90546 940-5108} 
+\mobile{ +90546 940-5108 } 
 %%% Social
+
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{resume-0}
+
 \email{serefguneysu@gmail.com}
-\homepage{www.posquit0.com}
+\homepage{guneysu.tumblr.com}
 \github{guneysus}
-\linkedin{posquit0}
+\linkedin{guneysu}
 \stackoverflow{1766716}{guneysus}
 %%% Optionals
-\position{Software Developer{\enskip\cdotp\enskip}Web Developer}
-\quote{``Make the change that you want to see in the world."}
+\position{Web Geliştirici{\enskip\cdotp\enskip}Uçak Mühendisliği Mezunu}
+\quote{Make the change that you want to see in the world.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,20 +83,26 @@
 %%% Make a footer for CV with three arguments(<left>, <center>, <right>)
 \makecvfooter
   {\today}
-  {Ahmed Şeref GÜNEYSU~~Résumé}
+  {Ahmed Şeref Güneysu ~~~·~~~ CV }
   {\thepage}
 
 \begin{document}
 %%% Make a header for CV with personal data
+
 \makecvheader
 
 %%% Import contents
-\import{\sectiondir}{education.tex}
-\import{\sectiondir}{experience.tex}
-\import{\sectiondir}{extracurricular.tex}
+
+% \import{\sectiondir}{coverletter.tex}
+% \import{\sectiondir}{education.tex}
+% \import{\sectiondir}{experience.tex}
+% \import{\sectiondir}{skills.tex}
 \import{\sectiondir}{honors.tex}
-\import{\sectiondir}{presentation.tex}
-\import{\sectiondir}{writing.tex}
-\import{\sectiondir}{committees.tex}
+% \import{\sectiondir}{contributins.tex}
+% \import{\sectiondir}{extracurricular.tex}
+% \import{\sectiondir}{honors.tex}
+% \import{\sectiondir}{presentation.tex}
+% \import{\sectiondir}{writing.tex}
+% \import{\sectiondir}{committees.tex}
 
 \end{document}
