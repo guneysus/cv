@@ -18,7 +18,7 @@
 %     Configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[10pt, a4paper]{awesome-cv}
 
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
@@ -36,7 +36,7 @@
 
 \definecolor{awesome}{HTML}{414141}
 
-\setbool{acvSectionColorHighlight}{true}
+% \setbool{acvSectionColorHighlight}{false}
 
 %% Colors for text
 %\definecolor{darktext}{HTML}{414141}
@@ -60,12 +60,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
 \name{}{Ahmed Şeref GÜNEYSU}
-\address{Zeytinburnu/İSTANBUL}
+% \address{Zeytinburnu/İSTANBUL}
+% \mobile{ +90546 940-5108 } 
 \mobile{ +90546 940-5108 } 
 %%% Social
 
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,left]{resume-0}
+\photo[circle,noedge,left]{linkedin-profile.jpg}
 
 \email{serefguneysu@gmail.com}
 \homepage{guneysu.tumblr.com}
@@ -73,8 +74,8 @@
 \linkedin{guneysu}
 \stackoverflow{1766716}{guneysus}
 %%% Optionals
-\position{Web Geliştirici{\enskip\cdotp\enskip}Uçak Mühendisliği Mezunu}
-\quote{Make the change that you want to see in the world.}
+\position{{\enskip\cdotp\enskip}Web Geliştirici{\enskip\cdotp\enskip}}
+\quote{Yazılım geliştirme süreçlerindeki entropinin asgari seviyeye indirilmesi en önemli hedefim.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,15 +95,17 @@
 %%% Import contents
 
 % \import{\sectiondir}{coverletter.tex}
-% \import{\sectiondir}{education.tex}
-% \import{\sectiondir}{experience.tex}
-% \import{\sectiondir}{skills.tex}
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{skills.tex}
+
+% \pagebreak
 \import{\sectiondir}{honors.tex}
-% \import{\sectiondir}{contributins.tex}
+% \import{\sectiondir}{contributions.tex}
 % \import{\sectiondir}{extracurricular.tex}
-% \import{\sectiondir}{honors.tex}
 % \import{\sectiondir}{presentation.tex}
 % \import{\sectiondir}{writing.tex}
 % \import{\sectiondir}{committees.tex}
+
 
 \end{document}
