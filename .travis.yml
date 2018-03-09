@@ -16,6 +16,9 @@ script:
 addons:
   artifacts:
     bucket: "guneysu"
+    debug: true
     working_dir: _build
     paths:
       - 'resume.pdf'
+    target_paths:
+      - $TARGET_PATH
