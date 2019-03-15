@@ -13,9 +13,6 @@ before_install:
 script:
 - make build
 
-before_deploy:
-  - mkdir -p /guneysus/cv/
-  - mv _build/resume.pdf $TARGET_PATH
 addons:
   artifacts:
     bucket: "guneysu"
