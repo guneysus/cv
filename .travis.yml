@@ -1,5 +1,7 @@
 sudo: required
+
 dist: trusty
+
 before_install:
 - sudo apt-get -qq update && 
   sudo apt-get install -y --no-install-recommends 
@@ -10,13 +12,14 @@ before_install:
   texlive-latex-recommended 
   texlive-xetex 
   texlive-full
+  
 script:
 - make build
 
 addons:
   artifacts:
-    bucket: "guneysu"
-    debug: true
+    bucket: $ARTIFACTS_BUCKET
+    debug: $ARTIFACTS_DEBUG
     working_dir: _build
     paths:
       - 'resume.pdf'
