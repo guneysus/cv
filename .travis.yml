@@ -16,12 +16,19 @@ before_install:
 script:
 - make build
 
-addons:
-  artifacts:
-    bucket: $ARTIFACTS_BUCKET
-    debug: $ARTIFACTS_DEBUG
-    working_dir: _build
-    paths:
-      - 'resume.pdf'
-    target_paths:
-      - $TARGET_PATH
+# addons:
+#  artifacts:
+#   bucket: $ARTIFACTS_BUCKET
+#    debug: $ARTIFACTS_DEBUG
+#    working_dir: _build
+#    paths:
+#      - 'resume.pdf'
+#    target_paths:
+#      - $TARGET_PATH
+      
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  file: "_build/resume.pdf"
+  skip_cleanup: true
+  draft: true
