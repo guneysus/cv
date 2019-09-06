@@ -19,6 +19,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
 \documentclass[10pt, a4paper]{awesome-cv}
+\usepackage{graphicx} % includegraphics command is implemented here
+
 
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
@@ -31,21 +33,18 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 %% Color for highlight
 % Define your custom color if you don't like awesome colors
-% \colorlet{awesome}{awesome-red}
-%\definecolor{awesome}{HTML}{CA63A8}
+\colorlet{awesome}{awesome-darknight}
 
-\definecolor{awesome}{HTML}{414141}
-
-% \setbool{acvSectionColorHighlight}{false}
+\setbool{acvSectionColorHighlight}{true}
 
 %% Colors for text
-%\definecolor{darktext}{HTML}{414141}
-%\definecolor{text}{HTML}{414141}
-%\definecolor{graytext}{HTML}{414141}
-%\definecolor{lighttext}{HTML}{414141}
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{414141}
+\definecolor{graytext}{HTML}{414141}
+\definecolor{lighttext}{HTML}{414141}
 
 %%% Override a separator for social informations in header(default: ' | ')
-%\headersocialsep[\quad\textbar\quad]
+% \headersocialsep[\quad\textbar\quad]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -59,23 +58,27 @@
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
+\photo[rectangle,right]{img/profile_300px.jpg}
+
+% \photo[rectangle,right]{img/aws-sa-assc.png}
+
+% https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2018-08-07&ci=AWS00469687
+
 \name{}{Ahmed Şeref GÜNEYSU}
 % \address{Zeytinburnu/İSTANBUL}
-% \mobile{ +90546 940-5108 } 
 \mobile{ +90546 940-5108 } 
 %%% Social
 
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,left]{linkedin-profile.jpg}
 
 \email{serefguneysu@gmail.com}
 \homepage{blog.guneysu.xyz}
 \github{guneysus}
-\linkedin{guneysu}
-\stackoverflow{1766716}{guneysus}
+% \linkedin{guneysu}
+% \stackoverflow{1766716}{guneysus}
 %%% Optionals
-\position{{\enskip\cdotp\enskip}Web Geliştirici{\enskip\cdotp\enskip}}
-\quote{Yazılım geliştirme süreçlerindeki entropinin asgari seviyeye indirilmesi en önemli hedefim.}
+\position{{\enskip\cdotp\enskip}Web Developer{\enskip\cdotp\enskip}AWS Solutions Architect Associate}
+% \quote{Yazılım geliştirme süreçlerindeki entropinin asgari seviyeye indirilmesi en önemli hedefim.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,8 +92,8 @@
 
 \begin{document}
 %%% Make a header for CV with personal data
+\makecvheader[L]
 
-\makecvheader
 
 %%% Import contents
 

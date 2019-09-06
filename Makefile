@@ -1,7 +1,9 @@
 default: build
 
+create-build-dir:
+	@mkdir _build || true
+
 build:
-	@mkdir -p _build
 
 	@xelatex \
 		-interaction=nonstopmode \
@@ -13,4 +15,4 @@ open: build
 	@mv _build/resume.pdf _build/ahmed-seref-guneysu-cv.pdf
 	@xdg-open _build/ahmed-seref-guneysu-cv.pdf
 
-.PHONY: default build open
+.PHONY: default build open create-build-dir
