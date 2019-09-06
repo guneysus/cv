@@ -3,7 +3,7 @@ default: build
 init:
 	@mkdir _build || true
 
-build:
+build: init
 	@xelatex \
 		-interaction=nonstopmode \
 		-halt-on-error \
