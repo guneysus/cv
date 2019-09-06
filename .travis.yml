@@ -14,7 +14,7 @@ before_install:
   texlive-full
   
 script:
-- make build
+- make build post-build
 
 # addons:
 #  artifacts:
@@ -29,6 +29,6 @@ script:
 deploy:
   provider: releases
   api_key: $GITHUB_DEPLOY_KEY
-  file: "_build/resume.pdf"
+  file: "_build/ahmed-seref-guneysu-cv.pdf"
   skip_cleanup: true
   draft: true
